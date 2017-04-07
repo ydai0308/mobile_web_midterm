@@ -126,8 +126,14 @@ body {
 .bigpic{
     margin-bottom: 10px;
 }
+.item-select{
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
 
-
+.addtocart{
+    margin-top:20px;
+}
 
 
 

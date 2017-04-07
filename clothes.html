@@ -81,39 +81,170 @@
             </div>
 
 
-            <div>
-                 <div>
-                
+            <div class="row">
+                 <div class="col-md-6">
+                     <div class="productdescription">
+                          <h3>Beliz Dress</h3>
+                          <p>$168</p>
+                          <br>
+                          <h4>Everything you always wanted to know about me</h4>
+                          <h5>Features</h5>
+                          <p>Just a quick knot and you're out the door. This is a mini length, fit and flare dress with a sweetheart neckline, center front knot detail and a detached belt</p>
+                     </div>
+                 </div>
+
+                 <div class="col-md-6">
+                     <div id="accordion">
+                         <h4>View Size chart</h4>
+                         <div>
+                               <table class="col-sm-12 col-md-12 col-lg-12 table table-striped table-lined-vertical">
+                                      <tbody>
+                    <tr>
+                        <td>US Size</td>
+                        <td>0</td>
+                        <td>2</td>
+                        <td>4</td>
+                        <td>6</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>Bust</td>
+                        <td>33</td>
+                        <td>34</td>
+                        <td>35</td>
+                        <td>36</td>
+                        <td>37</td>
+                    </tr>
+                    <tr>
+                        <td>Natural Waist</td>
+                        <td>24</td>
+                        <td>25</td>
+                        <td>26</td>
+                        <td>27</td>
+                        <td>28</td>
+                    </tr>
+                    <tr>
+                        <td>HIP</td>
+                        <td>37</td>
+                        <td>38</td>
+                        <td>39</td>
+                        <td>40</td>
+                        <td>41</td>
+                    </tr>
+                </tbody>
+                                </table>
+            </div>
+                    <h4>component</h4>
+                    <div>
+                        <p>cotton57%-polyamide 43%</p>
+                    </div>
+                   <h4>Garment care</h4>
+                    <div>
+                     <p>Dry clean only</p><br>
+                     <p>85% of dry cleaners use a creepy, toxic chemical called perc, that’s linked to respiratory issues, birth defects and air pollution. Yuck. Skip the standard dry cleaning and opt for green and organic cleaners.</p>
+                    </div>
+
+
+
+                     </div>
                  </div> 
             </div>
+
+          <div class="row">
+              <div class="col-md-6">
+                  <div class="widget item-select">
+                      <h3>select your item</h3>
+                      <fieldset>
+                          <legend>pick color</legend>
+                          <label for="radio-1">pink</label>
+                            <input type="radio" name="radio-1" id="radio-1">
+                            <label for="radio-1">white</label>
+                            <input type="radio" name="radio-1" id="radio-1">
+                            <label for="radio-1">black</label>
+                            <input type="radio" name="radio-1" id="radio-1">
+                      </fieldset>
+
+                      <fieldset>
+                          <legend>select size</legend>
+                          <label for="radio-1">size 0</label>
+                            <input type="radio" name="radio-1" id="radio-1">
+                            <label for="radio-1">size 2</label>
+                            <input type="radio" name="radio-1" id="radio-1">
+                            <label for="radio-1">size 4</label>
+                            <input type="radio" name="radio-1" id="radio-1">
+                      </fieldset>
+                  </div>
+              </div>
+
+              <div class="col-md-6">
+                   <div class="addtocart">
+                        <button type="button" class="btn btn-primary btn-lg btn-block">Add to cart</button>
+                   </div>
+              </div>
+          </div>
+
+
+
+
         </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </main>
 
 
 
+<footer>
+<hr class="small">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h4><strong>Colourpop</strong>
+                    </h4>
+                    <p>3481 Melrose Place
+                        <br>Beverly Hills, CA 90210</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-phone fa-fw"></i> (123) 456-7890</li>
+                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="http:google.com">colourpop.com</a>
+                        </li>
+                    </ul>
+                    <br>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
+                        </li>
+                    </ul>
+                    <hr class="small">
+                    <p class="text-muted">Copyright &copy; Yujie 2017</p>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
 
 
 
 
 
-
-
-
-
+ <script>
+  $( function() {
+    $( "#accordion" ).accordion({
+      heightStyle: "fill"
+    });
+ 
+    $( "#accordion-resizer" ).resizable({
+      minHeight: 0,
+      minWidth: 250,
+      resize: function() {
+        $( "#accordion" ).accordion( "refresh" );
+      }
+    });
+  } );
+  </script>
 
 
