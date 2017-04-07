@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>login page</title>
+	<head>
+    <meta charset="utf-8">
+    <link href="http://code.jquery.com/ui/1.11.4/themes/cupertino/jquery-ui.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+.lightbox .thumbnail{margin: 1em auto;}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="row">
+    <h1>Bootstrap Lightbox - no plugin</h1>
+    <div class="row">
+      <div class="col-xs-6 col-sm-4">
+        <a class="lightbox" title="Image 1" href="#">
+          <img class="thumbnail" src="img/1.jpg">
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<div tabindex="-1" class="modal fade" id="lightbox" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button class="close" type="button" data-dismiss="modal">×</button>
+        <h3 class="modal-title">Heading</h3>
+      </div>
+      <div class="modal-body text-center">
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+$('.lightbox').click(function() {
+        var title = $(this).attr('title');
+        var src = $(this).children('img').attr("src").replace('/240/140/', '/480/280/');
+        // Change the line above to modify the src according to your naming convention for larger images. 
+        // You could even change it to source a data attrib ;)
+
+        var alt = $(this).children('img').attr("alt") || "";
+        var $img = $('<img class="center-block img-responsive" alt="' + alt + '" src="' + src + '">');
+        $('.modal-title').html(title);
+        $('.modal-body').html('<p>Loading...</p>');
+        $('#lightbox').modal({
+                show: true
+        });
+        $img.load(function() {
+                $('.modal-body').html($img);
+        })
+});
+</script>
+
+</body>
+</html>

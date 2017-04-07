@@ -139,3 +139,6 @@ body {
     opacity: 0.5;
 }
 
+.lightbox .thumbnail {
+    margin: 1em auto;
+}
