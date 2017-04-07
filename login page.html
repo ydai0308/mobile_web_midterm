@@ -39,8 +39,11 @@
                     <li>
                         <a href="#">Clothes</a>
                     </li>
-                    <li>
+                    <li id="login_li">
                         <a href="login page.html">log in</a>
+                    </li>
+                    <li id="logout_li">
+                        <a href="login page.html">log out</a>
                     </li>
                     <li>
                         <a href="login page.html">create account</a>
@@ -85,7 +88,7 @@
                       <input id="tags">
                  </div>
                   <div class="btnsignin">     
-                   <button type="button" class="btn btn-primary ">Sign In</button>
+                   <button id="login_bnt" type="button" class="btn btn-primary ">Sign In</button>
                    </div>
             </div>
 		</div>
@@ -98,6 +101,13 @@
 		</div>
 	</div>
 </div>
+<script>
+$("#logout_li").hide();
+$( "#login_bnt" ).click(function() {
+    $("#login_li").hide();
+    $("#logout_li").show();
+});
+</script>
 </body>
 <footer>
 <hr class="small">
