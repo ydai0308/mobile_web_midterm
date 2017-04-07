@@ -135,5 +135,7 @@ body {
     margin-top:20px;
 }
 
-
+.otheritem:hover{
+    opacity: 0.5;
+}
 
