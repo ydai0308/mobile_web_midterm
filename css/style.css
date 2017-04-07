@@ -68,6 +68,60 @@ body {
 {
     padding: 1px 0;
 }*/
+.portfolio {
+    padding: 50px 0;
+}
+.portfolio-item {
+    margin-bottom: 30px;
+}
+
+.img-portfolio {
+    margin: 0 auto;
+}
+
+.img-portfolio:hover {
+    opacity: 0.8;
+}
+
+.btn-dark {
+    border-radius: 0;
+    color: #fff;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.btn-dark:hover,
+.btn-dark:focus,
+.btn-dark:active {
+    color: #fff;
+    background-color: rgba(0,0,0,0.7);
+}
+
+/*/////////////login page//////////////*/
+
+.topbar{
+    margin-top:
+    50px;
+   margin:auto;
+
+}
+.p.serif{font-family:"Times New Roman",Times,serif;}
+
+
+.btnsignin{
+    margin-top: 7px;2
+}
+.signin-item{
+    margin-bottom:100px;
+}
+.createaccount{
+
+    margin-bottom:100px;
+}
+
+
+
+
+
 
 
 
