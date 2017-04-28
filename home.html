@@ -30,13 +30,11 @@
 
 </head>
 <body>
-<!-- ////////////////navbar //////////////////////////-->
-<!-- 
-<section class="shop"> -->
-   
-<div class="container">
+<section class="shop">
 
-   <nav class="navebar navbar-default navbar-fixed-top" role="navigation">
+     
+<nav class="navebar navbar-default navbar-fixed-top" role="navigation">
+<div class="container">
         <div class="container-fluid">
          <!-- Brand and toggle get grouped for better mobile display -->
            <div class="navbar-header"> 
@@ -48,7 +46,8 @@
                    </button>
             <a href="index.html"><img src="img/logo.png" height="40px;"></a>
           </div>
-<!-- Collect the nav links, forms, and other content for toggling -->
+         
+<!-- !Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
              <ul class="nav navbar-nav">
                <li>
@@ -88,9 +87,7 @@
                      </li>
                    </ul>
                </li>
-
              </ul>
-
               <form class="navbar-form navbar-left">
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Search">
@@ -107,16 +104,11 @@
             <a href="cart.html" class="button js-toggle-cart" title="View cart">View cart</a>
           </li>
       </ul>
-
         </div>
-
         </div>
-
-    
-   </nav>
 </div>
-
-    <!-- ／／／／／／／／／／／／／／／／／carousel／／／／／／／／／／／／／／／／／／／／ -->
+</nav>
+<!-- ／／／／／／／／／／／／／／／／／carousel／／／／／／／／／／／／／／／／／／／／ -->
 
 <div class="container">
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -264,16 +256,16 @@
         <!-- /.container -->
     </section>
 </div>
-<!-- </section> -->
-<!-- ////////////////////////////////slide///////////// -->
+</section>
+<!-- ///////////////////////////////////////////////cartpage////////////////////// -->
 <aside class="cart js-cart">
   <div class="cart__header">
     <h1 class="cart__title">Shopping cart</h1>
-    <p class="cart__text">
-      <a class="button button--light js-toggle-cart" href="#" title="Close cart">
-        Close cart
+    <div class="cart__text">
+      <a class="js-toggle-cart" href="#" title="Close cart">
+        <button type="button" class="btn btn-danger closecart">Close cart</button>
       </a>
-    </p>
+    </div>
   </div>
   <div class="cart__products js-cart-products">
     <p class="cart__empty js-cart-empty">
@@ -293,7 +285,8 @@
   <div class="cart__footer">
     <p class="cart__text">
       <a class="button" href="#" title="Buy products">
-        Buy products
+      <button type="button" class="btn btn-success"> Buy products</button>
+        
       </a>
     </p>
   </div>
@@ -305,9 +298,7 @@
 
 
 
-
-
-
+</body>
 <footer>
         <div class="container">
             <div class="row">
@@ -340,18 +331,11 @@
         </div>
         <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
     </footer>
-
-
-
-
-
-
- <script>
+<script>
   $('.carousel').carousel({
    interval: 2000
   });
 
-///////////////////////////////////cart//////////////////////////////
 
 var cartOpen = false;
 var numberOfProducts = 0;
@@ -399,17 +383,20 @@ function removeProduct(e) {
 
 
 
+  </script>
 
 
 
 
 
 
- </script> 
 
 
 
 
 
-</body>
-</html>
+
+
+
+
+

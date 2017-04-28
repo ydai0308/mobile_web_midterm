@@ -7,6 +7,28 @@ body {
 
 body {
     font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+     overflow-x: hidden;
+      line-height: 20px;
+}
+body.open {
+  overflow-y: hidden;
+}
+
+.shop {
+  position: relative;
+  z-index: 5;
+}
+
+/*/////////////////index page//////////////////////*/
+.navbar-header{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-right: 80px
+}
+/*////////////////itemlist/////////////////
+*/
+.js-add-product{
+    margin-top: 10px;
 }
 
 
@@ -14,47 +36,77 @@ body {
 
 
 
-/*/////////////////search/////////////////*/
 
-.icon {
-    display:inline-block;
-    height:1em;
-    width:1em;
-    background-repeat: no-repeat;
-    background-size:contain;
-    vertical-align: middle;
-}
-.icon-search {
-    background-image: url(../img/search-icon.svg);
+/*/////////////////cart/////////////////*/
+.cart {
+  position: fixed;
+  background: #FFCCCC;
+  width: 400px;
+  max-width: 90%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  box-shadow: -2px 0 4px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transform: translate(500px, 0);
+  transition: transform $speed ease-in-out;
+  z-index: 20;
 }
 
-
-.search {
-    background-color:#eee;
-    line-height: 1em;
-    padding:.2em .5em;
-    border-radius:1em;
-    float: left;
-    margin-top: 13px;
-    margin-right: 10px;
+body.open .cart {
+  transform: translate(0, 0);
 }
-.search-input {
-    border-width:0;
-    background-color:inherit;
-    font: inherit;
-    padding:0;
+.cart__header {
+  box-sizing: border-box;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.9);
+  width: 100%;
+  padding: 15px 15px;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 2;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  
+  
+}
+
+.cart__title {
+  font-size: 20px;
+  line-height: 40px;
+  margin: 0;
+  float: left;
+}
+
+.cart__products {
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 70px 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  z-index: 1;
+}
+p{
+    font-size:14px;
     margin:0;
-    line-height:1em;
-    border-radius:0;
-    outline:0;
-    width:0;
-    overflow:hidden;
-    transition: all 0.3s;
 }
-.search:hover .search-input {
-    width:10em;
-    padding:0 0.5em;
+.cart__footer {
+  box-sizing: border-box;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.9);
+  width: 100%;
+  padding: 15px;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+  text-align: right;
 }
+
+.closecart{margin-left:150px;}
 /*///////////////header //////*/
 
 .header {
